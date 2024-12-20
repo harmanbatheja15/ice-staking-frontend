@@ -16,6 +16,15 @@ module.exports = {
 			screens: {
 				xs: '550px',
 			},
+			fontFamily: {
+				'JetBrains Mono': [
+					'JetBrains Mono',
+					...defaultTheme.fontFamily.mono,
+				],
+				'orbiter-deck': ['TASA Orbiter Deck', 'sans-serif'],
+				'orbiter-display': ['TASA Orbiter Display', 'sans-serif'],
+				'orbiter-text': ['TASA Orbiter Text', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [

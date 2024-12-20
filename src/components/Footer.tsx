@@ -1,5 +1,5 @@
 import Logo from '../assets/logo.svg';
-// import FooterBrandTitle from './FooterBrandTitle';
+import FooterBrandTitle from './FooterBrandTitle';
 
 const Footer = () => {
 	return (
@@ -18,7 +18,7 @@ const Footer = () => {
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 						{/* About Us */}
 						<div className='md:col-span-2 space-y-4'>
-							<h3 className='text-xs font-semibold tracking-wider text-blue-600 uppercase'>
+							<h3 className='text-sm font-semibold tracking-wider text-[#25ABE2] uppercase'>
 								About Us
 							</h3>
 							<div className='w-[52px] h-[52px] bg-[#CDEBFF] rounded-xl flex items-center justify-center'>
@@ -33,7 +33,7 @@ const Footer = () => {
 						{/* Links and Socials */}
 						<div className='md:col-span-1 grid grid-cols-4'>
 							<div className='col-span-2'>
-								<h3 className='text-xs font-semibold tracking-wider text-blue-600 uppercase'>
+								<h3 className='text-sm font-semibold tracking-wider text-[#25ABE2] uppercase'>
 									Links
 								</h3>
 								<ul role='list' className='mt-4 space-y-4'>
@@ -42,7 +42,7 @@ const Footer = () => {
 											href='#'
 											className='text-sm font-normal text-gray-500 hover:text-gray-900'
 										>
-											GitHub
+											Gitbook
 										</a>
 									</li>
 									<li>
@@ -73,7 +73,7 @@ const Footer = () => {
 							</div>
 
 							<div className='col-span-2'>
-								<h3 className='text-xs font-semibold tracking-wider text-blue-600 uppercase'>
+								<h3 className='text-sm font-semibold tracking-wider text-[#25ABE2] uppercase'>
 									Socials
 								</h3>
 								<ul role='list' className='mt-4 space-y-4'>
@@ -107,9 +107,9 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* Footer Brand Title */}
-				{/* <div className='mx-auto'>
+				<div className='bg-white flex justify-center'>
 					<FooterBrandTitle />
-				</div> */}
+				</div>
 			</footer>
 		</div>
 	);

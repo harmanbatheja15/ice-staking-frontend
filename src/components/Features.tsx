@@ -7,10 +7,10 @@ const Features = () => {
 		<>
 			<div className='max-w-[840px] mx-auto my-[120px]'>
 				<div className='flex md:items-center justify-between md:flex-row flex-col'>
-					<h1 className='md:text-[40px] text-3xl leading-none font-bold'>
+					<h1 className='text-[2.5rem] font-bold leading-10 bg-clip-text text-transparent bg-gradient-to-t from-[#25ABE2] via-[#0a2935] to-[#0A2935]'>
 						A safe & trusted staking solution
 					</h1>
-					<p className='text-[#0A2935] text-base font-medium opacity-60'>
+					<p className='text-[#0A2935] text-base font-medium opacity-60 font-mono'>
 						Ice Staking has been helping 147,548 people stake on
 						Solana for 2+ years
 					</p>

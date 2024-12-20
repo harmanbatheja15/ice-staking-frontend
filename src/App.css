@@ -1,3 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* TASA Orbiter Deck */
+@font-face {
+	font-family: 'TASA Orbiter Deck';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDeck-Regular-BF64891cba23854.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Deck';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDeck-Medium-BF64891cba192ce.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Deck';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDeck-SemiBold-BF64891cba48835.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Deck';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDeck-Bold-BF64891cba35ec7.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* TASA Orbiter Display */
+@font-face {
+	font-family: 'TASA Orbiter Display';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDisplay-Regular-BF64891cba1d563.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Display';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDisplay-Medium-BF64891cba56e9b.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Display';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDisplay-SemiBold-BF64891cba47942.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Display';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDisplay-Bold-BF64891cba5ae6f.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Display';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterDisplay-Black-BF64891cba23c21.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* TASA Orbiter Text */
+@font-face {
+	font-family: 'TASA Orbiter Text';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterText-Regular-BF64891cba384f3.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Text';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterText-Medium-BF64891cb9e8a75.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Text';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterText-SemiBold-BF64891cba09cfc.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TASA Orbiter Text';
+	src: url('./assets/tasa-orbiter-font-family/TASAOrbiterText-Bold-BF64891cba00f5b.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+html {
+	font-family: 'TASA Orbiter Display'
+}
+
 .wallet-adapter-dropdown-list {
 	background-color: #EFFAFF !important;
 	-webkit-box-shadow: 2px 3px 15px -5px rgba(0, 0, 0, 0.75) !important;

@@ -1,12 +1,12 @@
 import Hero from '../components/Hero';
 import Features from '../components/Features';
-import Projects from '../components/ProjectsComp';
-import Resources from '../components/Resources';
+import Projects from '../components/ProjectsSection';
+import Resources from '../components/ResourcesSection';
 
 const Home = () => {
 	return (
 		<>
-			<div className='lg:mx-0 px-4'>
+			<div className='lg:px-0 px-4'>
 				<Hero />
 				<Features />
 				<Projects />

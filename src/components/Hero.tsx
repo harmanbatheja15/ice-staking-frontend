@@ -1,4 +1,4 @@
-import Solana from '../assets/solana.png';
+import Solana from '../assets/solana.svg';
 import HeroImage from '../assets/hero2.png';
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
 				<div className='flex items-center justify-between'>
 					<div className='z-10'>
 						<div
-							className='relative w-fit flex items-center bg-[#F1F9FF1F] py-[6px] px-3 border-2 border-[#25ABE21F] font-bold text-sm rounded-[10px] mb-8'
+							className='relative w-fit flex items-center !bg-[#F1F9FF1F] py-[6px] px-3 border-2 border-[#25ABE21F] font-bold text-sm rounded-[10px] mb-8'
 							style={{ boxShadow: '#25ABE21F' }}
 						>
 							<div className='absolute -top-3 -right-2'>
@@ -37,32 +37,36 @@ const Hero = () => {
 							<div className='font-bold md:text-[52px] text-3xl'>
 								<h1 className='font-bold flex items-center leading-snug'>
 									<span className='text-[#25ABE2]'>$SOL</span>
-									<img
-										src={Solana}
-										alt=''
-										className='w-10 h-10'
-									/>
+									<div className='bg-black rounded-full p-2 mx-1'>
+										<img
+											src={Solana}
+											alt=''
+											className='w-5 h-5'
+										/>
+									</div>
 									<span>Backed</span>
 								</h1>
 								<h1 className='md:mt-2 mt-0'>
 									Infrastructure Funding
 								</h1>
 							</div>
-							<p className='text-base font-medium text-[#0A2935] opacity-60 md:mt-4 mt-3'>
+							<p className='text-base font-medium font-mono text-[#0A2935] opacity-60 md:mt-4 mt-3'>
 								Ice Staking is an initiative to help fund open
 								source infrastructure on Solana
 							</p>
 						</div>
-						<div className='flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] border rounded-2xl mt-[60px]'>
+						<div className='flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] rounded-2xl mt-[60px]'>
 							<div className='w-full flex justify-between'>
 								<div className='flex items-center'>
-									<img
-										src={Solana}
-										alt=''
-										className='w-8 h-8'
-									/>
+									<div className='bg-black rounded-full p-2 mr-2'>
+										<img
+											src={Solana}
+											alt=''
+											className='w-5 h-5'
+										/>
+									</div>
 									<input
-										type='text'
+										type='number'
 										placeholder='Enter Amount'
 										className='outline-none'
 									/>
@@ -70,7 +74,7 @@ const Hero = () => {
 								<select
 									name=''
 									id=''
-									className='outline-none bg-transparent'
+									className='outline-none bg-transparent border-l-2 border-opacity-25 border-[#25ABE2] pl-5 font-semibold text-base'
 								>
 									<option value='Native Stack'>
 										Native Stack
@@ -83,7 +87,7 @@ const Hero = () => {
 									</option>
 								</select>
 							</div>
-							<button className='sm:w-[105px] w-full bg-[#25ABE2] py-2 px-5 sm:mt-0 mt-2 border-[3px] border-[#25ABE2B2] rounded-xl text-white text-base '>
+							<button className='sm:w-[105px] w-full py-2 px-5 sm:mt-0 mt-2 rounded-xl text-white text-base sm:ml-5 bg-gradient-to-t from-[#00ddff] to-[#25abe2] bg-[#CDEBFF] border-[3px] border-[#25ABE2B2] border-opacity-[70%] leading-[18px]'>
 								Stake
 							</button>
 						</div>

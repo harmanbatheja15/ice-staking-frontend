@@ -7,9 +7,9 @@ const FooterBrandTitle = () => {
 				viewBox='0 0 1253 99'
 				fill='none'
 				xmlns='http://www.w3.org/2000/svg'
-				className='mx-auto'
+				className='h-full'
 			>
-				<g opacity='0.3' filter='url(#filter0_dii_337_4853)'>
+				<g opacity='0.3' filter='url(#filter0_dii_421_575)'>
 					<path
 						d='M4.78223 158.094V3.24786H31.6526V158.094H4.78223Z'
 						fill='#CDEBFF'
@@ -53,18 +53,15 @@ const FooterBrandTitle = () => {
 				</g>
 				<defs>
 					<filter
-						id='filter0_dii_337_4853'
+						id='filter0_dii_421_575'
 						x='0.522967'
 						y='-1.15893'
 						width='1252.36'
 						height='170.049'
 						filterUnits='userSpaceOnUse'
-						color-interpolation-filters='sRGB'
+						colorInterpolationFilters='sRGB'
 					>
-						<feFlood
-							flood-opacity='0'
-							result='BackgroundImageFix'
-						/>
+						<feFlood floodOpacity='0' result='BackgroundImageFix' />
 						<feColorMatrix
 							in='SourceAlpha'
 							type='matrix'
@@ -81,12 +78,12 @@ const FooterBrandTitle = () => {
 						<feBlend
 							mode='normal'
 							in2='BackgroundImageFix'
-							result='effect1_dropShadow_337_4853'
+							result='effect1_dropShadow_421_575'
 						/>
 						<feBlend
 							mode='normal'
 							in='SourceGraphic'
-							in2='effect1_dropShadow_337_4853'
+							in2='effect1_dropShadow_421_575'
 							result='shape'
 						/>
 						<feColorMatrix
@@ -110,7 +107,7 @@ const FooterBrandTitle = () => {
 						<feBlend
 							mode='normal'
 							in2='shape'
-							result='effect2_innerShadow_337_4853'
+							result='effect2_innerShadow_421_575'
 						/>
 						<feColorMatrix
 							in='SourceAlpha'
@@ -132,8 +129,8 @@ const FooterBrandTitle = () => {
 						/>
 						<feBlend
 							mode='normal'
-							in2='effect2_innerShadow_337_4853'
-							result='effect3_innerShadow_337_4853'
+							in2='effect2_innerShadow_421_575'
+							result='effect3_innerShadow_421_575'
 						/>
 					</filter>
 				</defs>
