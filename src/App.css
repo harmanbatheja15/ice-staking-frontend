@@ -98,6 +98,12 @@ html {
 	font-family: 'TASA Orbiter Display'
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 .wallet-adapter-dropdown-list {
 	background-color: #EFFAFF !important;
 	-webkit-box-shadow: 2px 3px 15px -5px rgba(0, 0, 0, 0.75) !important;

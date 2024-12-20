@@ -57,7 +57,7 @@ const Hero = () => {
 						</div>
 						<div className='flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] rounded-2xl mt-[60px]'>
 							<div className='w-full flex justify-between'>
-								<div className='flex items-center'>
+								<div className='w-full flex items-center'>
 									<div className='bg-black rounded-full p-2 mr-2'>
 										<img
 											src={Solana}
@@ -68,7 +68,7 @@ const Hero = () => {
 									<input
 										type='number'
 										placeholder='Enter Amount'
-										className='outline-none'
+										className='w-full pr-2 outline-none'
 									/>
 								</div>
 								<select
@@ -76,14 +76,14 @@ const Hero = () => {
 									id=''
 									className='outline-none bg-transparent border-l-2 border-opacity-25 border-[#25ABE2] pl-5 font-semibold text-base'
 								>
-									<option value='Native Stack'>
-										Native Stack
+									<option value='Native Stake'>
+										Native Stake
 									</option>
-									<option value='Native Stack'>
-										Native Stack
+									<option value='Native Stake'>
+										Native Stake
 									</option>
-									<option value='Native Stack'>
-										Native Stack
+									<option value='Native Stake'>
+										Native Stake
 									</option>
 								</select>
 							</div>
