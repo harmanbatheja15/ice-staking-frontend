@@ -1,5 +1,5 @@
 import Logo from '../assets/logo.svg';
-import FooterBrandTitle from './FooterBrandTitle';
+// import FooterBrandTitle from './FooterBrandTitle';
 
 const Footer = () => {
 	return (
