@@ -53,7 +53,11 @@ const Hero = () => {
 										className='outline-none'
 									/>
 								</div>
-								<select name='' id='' className='outline-none'>
+								<select
+									name=''
+									id=''
+									className='outline-none bg-transparent'
+								>
 									<option value='Native Stack'>
 										Native Stack
 									</option>
