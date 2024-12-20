@@ -7,7 +7,7 @@ const ProjectCard = ({ project, index }: any) => {
 		<>
 			<div
 				key={index}
-				className='col-span-full md:col-span-1 relative bg-white rounded-2xl p-6 h-[267px]'
+				className='col-span-full md:col-span-1 relative bg-white rounded-2xl p-6 h-[267px] hover:shadow-lg transition-all duration-300 ease-out'
 			>
 				<div className='flex items-center border-b border-dashed pb-4'>
 					<img src={project.image} alt='' />
