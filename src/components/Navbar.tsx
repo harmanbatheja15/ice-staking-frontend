@@ -2,9 +2,32 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 import { IoMdMenu } from 'react-icons/io';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { useWallet } from '@solana/wallet-adapter-react';
+
+const walletButtonStyle = {
+	backgroundColor: '#CDEBFF',
+	borderWidth: '3px',
+	borderColor: '#25ABE233',
+	borderStyle: 'solid',
+	color: '#25ABE2',
+	paddingTop: '0.75rem', // py-3
+	paddingBottom: '0.75rem', // py-3
+	paddingLeft: '1.25rem', // px-5
+	paddingRight: '1.25rem', // px-5
+	borderRadius: '0.75rem', // rounded-xl
+	fontWeight: '600', // font-semibold
+	fontSize: '0.875rem', // text-sm
+};
 
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const { publicKey } = useWallet();
+
+	const truncateText = (text: string, limit: number) => {
+		if (text.length <= limit) return text;
+		return text.slice(0, limit) + '...';
+	};
 
 	return (
 		<>
@@ -19,11 +42,15 @@ const Navbar = () => {
 					<li>
 						<Link to=''>System</Link>
 					</li>
-					<Link to=''>
-						<button className='bg-[#CDEBFF] border-[3px] border-[#25ABE233] text-[#25ABE2] py-3 px-5 rounded-xl font-semibold text-sm'>
-							Connect Wallet
-						</button>
-					</Link>
+					<WalletMultiButton
+						style={walletButtonStyle}
+						children={
+							publicKey
+								? truncateText(publicKey.toString(), 4) +
+								  publicKey.toString().slice(-4)
+								: 'Connect Wallet'
+						}
+					/>
 				</ul>
 				<button
 					className='block md:hidden'
@@ -34,7 +61,6 @@ const Navbar = () => {
 			</nav>
 
 			{/* Mobile Menu */}
-			{/* {isMobileMenuOpen && ( */}
 			<div
 				className={`fixed top-0 left-0 w-80 h-full bg-[#d5f0fb] z-50 border-r py-5 px-4 transition-transform duration-300 ease-in-out transform ${
 					isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
@@ -45,7 +71,7 @@ const Navbar = () => {
 						<img src={Logo} alt='' />
 					</div>
 					<ul className='flex-1 flex flex-col'>
-						<div className='flex-1 space-y-2'>
+						<div className='space-y-2'>
 							<li
 								className={`transition-all duration-300 ease-in-out font-extrabold font-base rounded-lg py-3 px-3 bg-[#e2f7ff] cursor-pointer`}
 							>
@@ -58,17 +84,22 @@ const Navbar = () => {
 								System
 							</li>
 						</div>
-						<div className='mt-auto pb-2'>
-							<Link to=''>
-								<button className='w-full bg-[#CDEBFF] border-[3px] border-[#25ABE233] text-[#25ABE2] py-3 px-5 rounded-xl font-semibold text-sm'>
-									Connect Wallet
-								</button>
-							</Link>
+						<div className='pt-4'>
+							<WalletMultiButton
+								style={walletButtonStyle}
+								children={
+									publicKey
+										? truncateText(
+												publicKey.toString(),
+												4
+										  ) + publicKey.toString().slice(-4)
+										: 'Connect Wallet'
+								}
+							/>
 						</div>
 					</ul>
 				</div>
 			</div>
-			{/* )} */}
 		</>
 	);
 };

@@ -8,9 +8,23 @@ const Hero = () => {
 				<div className='flex items-center justify-between'>
 					<div className='z-10'>
 						<div
-							className='w-fit flex items-center bg-[#F1F9FF1F] py-[6px] px-3 border-2 border-[#25ABE21F] font-bold text-sm rounded-[10px] mb-8'
+							className='relative w-fit flex items-center bg-[#F1F9FF1F] py-[6px] px-3 border-2 border-[#25ABE21F] font-bold text-sm rounded-[10px] mb-8'
 							style={{ boxShadow: '#25ABE21F' }}
 						>
+							<div className='absolute -top-3 -right-2'>
+								<svg
+									width='265'
+									height='22'
+									viewBox='0 0 265 22'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										d='M118.719 13.524C140.906 15.5861 151.255 7.19707 187.655 15.1371C191.544 15.9853 197.586 15.7829 200.997 14.7674C211.004 11.7885 220.861 10.8162 231.624 13.524C241.235 16.5572 244.873 6.74042 254.387 10.8162C254.519 10.778 257.175 13.5751 257.243 13.524C263.408 21.4492 255.313 24.5294 264.409 17.8234C267.683 14.5234 257.243 -0.700671 235.77 2.84197C217.271 5.89398 178.361 4.08185 163.052 1.60212C147.743 -0.877645 80.1267 1.60212 80.1267 1.60212L0 7.5L75.7022 11.8431C85.8893 12.8499 95.1173 11.3304 118.719 13.524Z'
+										fill='white'
+									/>
+								</svg>
+							</div>
 							<div className='border-r-2 border-[#25ABE2] px-4'>
 								$105M TVL
 							</div>
