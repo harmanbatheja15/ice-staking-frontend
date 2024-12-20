@@ -36,7 +36,7 @@ const Navbar = () => {
 			{/* Mobile Menu */}
 			{/* {isMobileMenuOpen && ( */}
 			<div
-				className={`fixed top-0 left-0 w-80 bg-[#d5f0fb] z-50 border-r py-5 px-4 transition-transform duration-300 ease-in-out transform ${
+				className={`fixed top-0 left-0 w-80 h-full bg-[#d5f0fb] z-50 border-r py-5 px-4 transition-transform duration-300 ease-in-out transform ${
 					isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
 				}`}
 			>
