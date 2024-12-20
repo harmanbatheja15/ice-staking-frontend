@@ -25,18 +25,18 @@ const ResourcesSection = () => {
 						</Link>
 					</div>
 					<div className='w-full md:max-w-[272px] relative bg-white rounded-2xl md:block flex items-center cursor-pointer hover:shadow-lg transition-all duration-300 ease-out'>
-						<div className=''>
+						<div className='w-1/2 md:w-full aspect-square md:aspect-auto'>
 							<img
 								src={Img1}
 								alt=''
-								className='w-full md:rounded-t-2xl rounded-tl-2xl rounded-bl-2xl'
+								className='w-full h-full object-cover md:rounded-t-2xl rounded-l-2xl'
 							/>
 						</div>
-						<div className='p-6 space-y-3'>
+						<div className='w-1/2 md:w-full p-6'>
 							<p className='text-[#25ABE2] text-sm font-bold'>
 								04 November 2024
 							</p>
-							<h1 className='text-[#0A2935] leading-6 text-xl font-bold'>
+							<h1 className='text-[#0A2935] leading-6 text-xl font-bold mt-3'>
 								Why is everyone obsessing over Solana?
 							</h1>
 						</div>
