@@ -24,7 +24,7 @@ const Footer = () => {
 							<div className='w-[52px] h-[52px] bg-[#CDEBFF] rounded-xl flex items-center justify-center'>
 								<img src={Logo} alt='' />
 							</div>
-							<p className='max-w-[16rem] mt-4 text-sm text-gray-500'>
+							<p className='max-w-[22rem] mt-4 text-sm text-gray-500 font-mono'>
 								Ice Staking is an initiative to help fund open
 								source infrastructure on Solana
 							</p>
@@ -36,7 +36,10 @@ const Footer = () => {
 								<h3 className='text-sm font-semibold tracking-wider text-[#25ABE2] uppercase'>
 									Links
 								</h3>
-								<ul role='list' className='mt-4 space-y-4'>
+								<ul
+									role='list'
+									className='mt-4 space-y-4 font-mono'
+								>
 									<li>
 										<a
 											href='#'
@@ -76,7 +79,10 @@ const Footer = () => {
 								<h3 className='text-sm font-semibold tracking-wider text-[#25ABE2] uppercase'>
 									Socials
 								</h3>
-								<ul role='list' className='mt-4 space-y-4'>
+								<ul
+									role='list'
+									className='mt-4 space-y-4 font-mono'
+								>
 									<li>
 										<a
 											href='#'
