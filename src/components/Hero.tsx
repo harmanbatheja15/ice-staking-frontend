@@ -39,27 +39,33 @@ const Hero = () => {
 								source infrastructure on Solana
 							</p>
 						</div>
-						<div className='flex items-center justify-between sm:w-[552px] bg-white py-2 px-[10px] border rounded-2xl mt-[60px]'>
-							<div className='flex items-center'>
-								<img src={Solana} alt='' className='w-8 h-8' />
-								<input
-									type='text'
-									placeholder='Enter Amount'
-									className='outline-none'
-								/>
+						<div className='flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] border rounded-2xl mt-[60px]'>
+							<div className='w-full flex justify-between'>
+								<div className='flex items-center'>
+									<img
+										src={Solana}
+										alt=''
+										className='w-8 h-8'
+									/>
+									<input
+										type='text'
+										placeholder='Enter Amount'
+										className='outline-none'
+									/>
+								</div>
+								<select name='' id='' className='outline-none'>
+									<option value='Native Stack'>
+										Native Stack
+									</option>
+									<option value='Native Stack'>
+										Native Stack
+									</option>
+									<option value='Native Stack'>
+										Native Stack
+									</option>
+								</select>
 							</div>
-							<select name='' id=''>
-								<option value='Native Stack'>
-									Native Stack
-								</option>
-								<option value='Native Stack'>
-									Native Stack
-								</option>
-								<option value='Native Stack'>
-									Native Stack
-								</option>
-							</select>
-							<button className='w-[105px] bg-[#25ABE2] py-2 px-5 border-[3px] border-[#25ABE2B2] rounded-xl text-white text-base '>
+							<button className='sm:w-[105px] w-full bg-[#25ABE2] py-2 px-5 sm:mt-0 mt-2 border-[3px] border-[#25ABE2B2] rounded-xl text-white text-base '>
 								Stake
 							</button>
 						</div>
