@@ -6,7 +6,7 @@ import Solana from '../assets/solana.svg';
 
 const Hero = () => {
 	const [selectedOption, setSelectedOption] =
-		useState<string>('Native Stack');
+		useState<string>('Native Stake');
 	const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false);
 
 	const Dropdown = () => {
@@ -18,15 +18,15 @@ const Hero = () => {
 				>
 					<div
 						className='cursor-pointer border-b p-3'
-						onClick={() => setSelectedOption('Native Stack')}
+						onClick={() => setSelectedOption('Native Stake')}
 					>
-						<p>Native Stack</p>
+						<p>Native Stake</p>
 					</div>
 					<div
 						className='cursor-pointer p-3'
-						onClick={() => setSelectedOption('Liquid Stack')}
+						onClick={() => setSelectedOption('Liquid Stake')}
 					>
-						<p>Liquid Stack</p>
+						<p>Liquid Stake</p>
 					</div>
 				</div>
 			</div>
