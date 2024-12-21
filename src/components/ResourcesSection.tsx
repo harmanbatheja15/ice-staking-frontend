@@ -14,7 +14,7 @@ const ResourcesSection = () => {
 							<br />
 							the latest resources
 						</h1>
-						<p className='text-[#0A2935] text-base font-medium opacity-60'>
+						<p className='text-[#0A2935] text-base font-medium opacity-60 font-mono'>
 							The thoughts, ideas and advice you need to get
 							started with Ice Staking
 						</p>
@@ -44,7 +44,7 @@ const ResourcesSection = () => {
 				</div>
 				<div className='flex items-center flex-wrap gap-3 mt-6'>
 					{resources?.slice(0, 3)?.map((resource, index) => (
-						<ResourceCard resource={resource} index={index} />
+						<ResourceCard resource={resource} key={index} />
 					))}
 				</div>
 			</div>

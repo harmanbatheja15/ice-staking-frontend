@@ -2,13 +2,23 @@ import { IoLogoGithub } from 'react-icons/io';
 import { TbWorld } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ project, index }: any) => {
+interface Project {
+	image: string;
+	name: string;
+	title: string;
+	description: string;
+	website: string;
+	github: string;
+}
+
+interface ProjectCardProps {
+	project: Project;
+}
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
 	return (
 		<>
-			<div
-				key={index}
-				className='col-span-full md:col-span-1 relative bg-white rounded-2xl p-6 h-[267px] hover:shadow-lg transition-all duration-300 ease-out'
-			>
+			<div className='col-span-full md:col-span-1 relative bg-white rounded-2xl p-6 h-[267px] hover:shadow-lg transition-all duration-300 ease-out'>
 				<div className='flex items-center border-b border-dashed pb-4'>
 					<img src={project.image} alt='' />
 					<div className='pl-4'>

@@ -39,10 +39,14 @@ const Navbar = () => {
 				</div>
 				<ul className='hidden md:flex items-center space-x-5 text-[#0A2935] font-medium text-base font-mono'>
 					<li>
-						<Link to=''>Security</Link>
+						<Link to='' className='cursor-pointer'>
+							Security
+						</Link>
 					</li>
 					<li>
-						<Link to=''>System</Link>
+						<Link to='' className='cursor-pointer'>
+							System
+						</Link>
 					</li>
 					<WalletMultiButton
 						style={walletButtonStyle}

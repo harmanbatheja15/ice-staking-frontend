@@ -1,14 +1,22 @@
-const ResourceCard = ({ resource, index }: any) => {
+interface Resource {
+	image: string;
+	date: string;
+	title: string;
+}
+
+interface ResourceCardProps {
+	resource: Resource;
+}
+
+const ResourceCard = ({ resource }: ResourceCardProps) => {
 	const truncateText = (text: string, limit: number) => {
 		if (text.length <= limit) return text;
 		return text.slice(0, limit) + '...';
 	};
+
 	return (
 		<>
-			<div
-				key={index}
-				className='sm:max-w-[272px] w-full relative bg-white rounded-2xl cursor-pointer hover:shadow-lg transition-all duration-300 ease-out'
-			>
+			<div className='sm:max-w-[272px] w-full relative bg-white rounded-2xl cursor-pointer hover:shadow-lg transition-all duration-300 ease-out'>
 				<div className=''>
 					<img
 						src={resource.image}

@@ -1,7 +1,42 @@
-import Solana from '../assets/solana.svg';
+import { useState } from 'react';
+import ClickAwayListener from 'react-click-away-listener';
+import { IoIosArrowDown } from 'react-icons/io';
 import HeroImage from '../assets/hero2.png';
+import Solana from '../assets/solana.svg';
 
 const Hero = () => {
+	const [selectedOption, setSelectedOption] =
+		useState<string>('Native Stack');
+	const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false);
+
+	const Dropdown = () => {
+		return (
+			<div className='w-[200px] absolute top-8 sm:left-0 right-0 bg-white border border-[#ccc] rounded-xl'>
+				<div
+					className=''
+					onClick={() => setIsDropdownVisible(!isDropdownVisible)}
+				>
+					<div
+						className='cursor-pointer border-b p-3'
+						onClick={() => setSelectedOption('Native Stack')}
+					>
+						<p>Native Stack</p>
+					</div>
+					<div
+						className='cursor-pointer p-3'
+						onClick={() => setSelectedOption('Liquid Stack')}
+					>
+						<p>Liquid Stack</p>
+					</div>
+				</div>
+			</div>
+		);
+	};
+
+	const handleClickAway = () => {
+		setIsDropdownVisible(false);
+	};
+
 	return (
 		<>
 			<div className='max-w-[900px] mx-auto pt-28'>
@@ -55,38 +90,41 @@ const Hero = () => {
 								source infrastructure on Solana
 							</p>
 						</div>
-						<div className='flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] rounded-2xl mt-[60px]'>
-							<div className='w-full flex justify-between'>
-								<div className='w-full flex items-center'>
-									<div className='bg-black rounded-full p-2 mr-2'>
-										<img
-											src={Solana}
-											alt=''
-											className='w-5 h-5'
+						<div className='relative flex items-center justify-between sm:flex-row flex-col sm:w-[552px] bg-white py-2 px-[10px] rounded-2xl mt-[60px]'>
+							<ClickAwayListener onClickAway={handleClickAway}>
+								<div className='w-full flex justify-between'>
+									<div className='w-full flex items-center'>
+										<div className='bg-black rounded-full p-2 mr-2'>
+											<img
+												src={Solana}
+												alt=''
+												className='w-5 h-4'
+											/>
+										</div>
+										<input
+											type='number'
+											placeholder='Enter Amount'
+											className='w-full pr-2 outline-none'
 										/>
 									</div>
-									<input
-										type='number'
-										placeholder='Enter Amount'
-										className='w-full pr-2 outline-none'
-									/>
+									<div className='relative flex items-center'>
+										<div
+											className='w-fit flex items-center justify-end cursor-pointer'
+											onClick={() =>
+												setIsDropdownVisible(
+													!isDropdownVisible
+												)
+											}
+										>
+											<p className='whitespace-nowrap text-[#0A2935] text-base font-semibold pr-3'>
+												{selectedOption}
+											</p>
+											<IoIosArrowDown size={16} />
+										</div>
+										{isDropdownVisible && <Dropdown />}
+									</div>
 								</div>
-								<select
-									name=''
-									id=''
-									className='outline-none bg-transparent border-l-2 border-opacity-25 border-[#25ABE2] pl-5 font-semibold text-base'
-								>
-									<option value='Native Stake'>
-										Native Stake
-									</option>
-									<option value='Native Stake'>
-										Native Stake
-									</option>
-									<option value='Native Stake'>
-										Native Stake
-									</option>
-								</select>
-							</div>
+							</ClickAwayListener>
 							<button className='sm:w-[105px] w-full py-2 px-5 sm:mt-0 mt-2 rounded-xl text-white text-base sm:ml-5 bg-gradient-to-t from-[#00ddff] to-[#25abe2] bg-[#CDEBFF] border-[3px] border-[#25ABE2B2] border-opacity-[70%] leading-[18px]'>
 								Stake
 							</button>
