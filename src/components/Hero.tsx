@@ -104,7 +104,7 @@ const Hero = () => {
 										<input
 											type='number'
 											placeholder='Enter Amount'
-											className='w-full pr-2 outline-none'
+											className='w-full mr-6 pr-4 outline-none border-r-2 border-[#25ABE2] border-opacity-25 h-full'
 										/>
 									</div>
 									<div className='relative flex items-center'>
